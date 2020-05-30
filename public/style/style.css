@@ -1,0 +1,54 @@
+.wrapper__main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__wrapper h1 {
+    margin-top: 20px;
+    font-family: 'Amatic SC';
+    font-weight: bold;
+    font-size: 26px;
+    color: #573F3B;
+}
+.header__wrapper span {
+    font-size: 15px;
+    color: #ED8767;
+}
+
+.main__menu {
+    margin-top: 20px;
+}
+.main__menu ul li {
+    margin-right: 14px;
+    display: inline-block;
+}
+.main__menu ul li:last-child {
+    margin-right: 0;
+}
+.main__menu ul li a {
+    font-family: sans-serif;
+    font-size: 11px;
+    color: #573F3B;
+    text-decoration: none;
+    transition: .3s all;
+}
+.main__menu ul li a:hover, .header ul li a:active, .header ul li a:focus {
+    color: #ED8767;
+}
+.main__menu ul li a::after {
+    content: "";
+    width: 0%;
+    display: block;
+    border-bottom: 1px solid #ED8767;
+    transition: .3s all;
+}
+.main__menu ul li a:hover::after {
+    width: 100%;
+}
